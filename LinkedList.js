@@ -7,16 +7,6 @@ class LinkedList {
 
   appendToTail(item) {
     console.log(`append ${item} to tail`);
-    let newNode = new Node(item);
-    if(!this.head) {
-      this.head = newNode;
-    }
-    else {
-      while (this.head.next !== null) {
-        this.head = this.head.next;
-      }
-      this.head.next = newNode;
-    }
   }
 }
 

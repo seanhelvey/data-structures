@@ -8,32 +8,12 @@ class Queue {
 
   enqueue(item) {
     console.log(`enqueue ${item} onto queue`)
-    if(!this.first) {
-      this.last = new Node(item);
-      this.first = this.last;
-    }
-    else {
-      this.last.next = new Node(item);
-      this.last = this.last.next;
-    }
   }
 
-  dequeue(item) {
-    if(this.first) {
-      let item = this.first.data;
-      console.log(`dequeue ${item} off queue`)
-      this.first = this.first.next;
-      if(!this.first) { this.last = null; }
-      return item;
-    }
-    return null
-  }
-
-  isEmpty() {
-    return !this.first
+  dequeue() {
+    console.log(`dequeue off queue`)
   }
 }
-
 
 let myQueue = new Queue();
 console.log("myQueue", myQueue);
