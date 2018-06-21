@@ -18,7 +18,7 @@ class Queue {
     }
   }
 
-  dequeue(item) {
+  dequeue() {
     if(this.first) {
       let item = this.first.data;
       console.log(`dequeue ${item} off queue`)
