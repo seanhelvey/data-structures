@@ -8,10 +8,23 @@ class Queue {
 
   enqueue(item) {
     console.log(`enqueue ${item} onto queue`)
+    // TODO
+    // If queue *does not* have a first
+      // #1: Set current last to a newly instantiated node using value passed in
+      // #2: Set current first to current last
+    // Else if queue *does* have a first
+      // #3: Set current last next to a newly instantiated node using value passed in
+      // #4: Set current last to current last next
   }
 
   dequeue() {
     console.log(`dequeue off queue`)
+    // If queue *does* have a first
+      // #1: Set variable to hold data from current first
+      // #2: Set current first to current first next
+      // #3: If current first is now null, set current last to null also
+      // #4: Return the variable holding data from previous top
+    // Else return null if queue *does not* have a first
   }
 }
 
